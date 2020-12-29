@@ -19,6 +19,12 @@ The Adaptive Luenberger Observer uses a Least-Squares estimator with forgetting 
 
 ![](LQR_images/parametric.PNG)
 
+The controller generated input, state estimations and parameter estimations are as follows:
+
+![](LQR_images/plot_input.PNG)
+![](LQR_images/plot_est.PNG)
+![](LQR_images/plot_params.PNG)
+
 In our simulation we place our observer poles at -4. The plant is controllable and observable, however, it is unstable which implies that the open-loop system poles are in the open right hand plane. 
 
 There is no guarantee that one can find a lambda such that the closed loop poles are equal to the roots of a desired polynomial A*, rather LQ control design is used only to ensure that the closed loop system has good robustness properties meaning that the closed loop eigenvalues are in the open left hand side of the plane. 
